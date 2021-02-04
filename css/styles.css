@@ -2120,11 +2120,12 @@ pre code {
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   text-align: center;
 }
-option {
-  background-color: black !important;
+option{
+  color: black;
 }
 option > span {
   line-height: 2;
+  color: #000;
 }
 @media (prefers-reduced-motion: reduce) {
   .form-control {
@@ -10488,7 +10489,7 @@ header.masthead {
 .form-section {
   position: fixed;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #7a311d;
   min-height: 80px;
   z-index: 11;
   width: 100%;
@@ -10545,10 +10546,11 @@ header.masthead {
 
 .btn-submit {
   color: #fff;
-  background-color: #00aaff;
-  border-color: #00aaff;
+  background-color: #7a311d;
+  border-color: white;
   line-height: 2.5;
   border-radius: 0;
+  text-transform: uppercase;
 }
 
 .btn-submit:hover {
@@ -10560,7 +10562,7 @@ header.masthead {
   top: 0;
   right:0;
   z-index: 1031;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: #7a311d;
   width: 100%;
   height: 100%;
   display: none;
@@ -10580,7 +10582,7 @@ header.masthead {
     bottom: -.6em;
     height: 1em;
     pointer-events: none;
-    background: #00aaff;
+    background: #9a9a9a;
     margin-left: 44px;
 }
 .btn-close{
@@ -10599,4 +10601,7 @@ header.masthead {
 }
 .mobile-section {
   margin-top: 150px;
+}
+.form-control::placeholder{
+  color: white;
 }

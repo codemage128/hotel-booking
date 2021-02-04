@@ -50,17 +50,35 @@ $(function () {
   var input = document.getElementById('period');
   var datepicker = new HotelDatepicker(input, {
     autoClose: false,
+    format: "MM-DD-YYYY",
   });
-  var input = document.getElementById('period-mobile');
-  var datepicker = new HotelDatepicker(input, {
+  var inputMobile = document.getElementById('period-mobile');
+  var datepickerMobile = new HotelDatepicker(inputMobile, {
     autoClose: false,
+    format: "MM-DD-YYYY",
   });
-  
-  $('.btn-mobile-book').click(function(){
+
+  $('.btn-mobile-book').click(function () {
     $('.mobile-form').show("slow");
   })
-  $('.btn-close').click(function(){
+  $('.btn-close').click(function () {
     $('.mobile-form').hide("slow");
   })
-  
+
+  input.addEventListener('afterClose', function () {
+    var rangeDate = datepicker.getValue();
+    var rangeArray = rangeDate.split(' - ');
+    var dateStart = new Date(rangeArray[0]);
+    var dateEnd = new Date(rangeArray[1]);
+    $('#checkInDate').val(dateStart.getTime());
+    $('#checkOutDate').val(dateEnd.getTime());
+  }, false);
+  inputMobile.addEventListener('afterClose', function () {
+    var rangeDate = datepickerMobile.getValue();
+    var rangeArray = rangeDate.split(' - ');
+    var dateStart = new Date(rangeArray[0]);
+    var dateEnd = new Date(rangeArray[1]);
+    $('#checkInDateMobile').val(dateStart.getTime());
+    $('#checkOutDateMobile').val(dateEnd.getTime());
+  }, false);
 })
