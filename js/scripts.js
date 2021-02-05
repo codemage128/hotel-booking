@@ -62,7 +62,7 @@ $(function () {
     $('.mobile-form').show("slow");
   })
   $('.btn-close').click(function () {
-    $('.mobile-form').hide("slow");
+    $(".mobile-form").slideUp();
   })
 
   input.addEventListener('afterClose', function () {
