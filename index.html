@@ -69,7 +69,7 @@
     </section>
     <!--Desktop Form Section-->
     <div class="form-section">
-        <form class="book-form">
+        <form class="book-form" action="https://direct-book.com/properties/TamarindHillsdirect?" method="get">
             <div class="col-md-1 col-lg-2 logo-section">
                 <img src="img/logo.png" class="image-logo" />
             </div>
@@ -77,8 +77,8 @@
                 <div class="form-group row m-auto">
                     <div class="col-md-12 col-lg-12">
                         <input type="text" class="form-control" id="period" value="Arrival, Departure" />
-                        <input type="hidden" id="checkInDate" name="checkInDate" />
-                        <input type="hidden" id="checkOutDate" name="checkOutDate" />
+                        <input type="hidden" id="checkInDate" name="check_in_date" />
+                        <input type="hidden" id="checkOutDate" name="check_out_date" />
                         <input type="hidden" name="locale" value="en" />
                         <input type="hidden" name="currency" value="USD" />
                     </div>
@@ -87,7 +87,7 @@
             <div class="col-lg-3 col-md-4 ">
                 <div class="form-group row m-auto">
                     <div class="col-md-12">
-                        <select class="form-control" name="items[0][adults]">
+                        <select class="form-control" name="number_adults">
                             <option><span>No. of guests</span></option>
                             <option><span>1</span></option>
                             <option><span>2</span></option>
@@ -119,7 +119,7 @@
             <button class="btn btn-close">X</button>
         </div>
         <div class="mobile-section">
-            <form>
+            <form action="https://direct-book.com/properties/TamarindHillsdirect?" method="get">
                 <div class="container">
                     <div class="row">
                         <div class='col-12'>
@@ -127,8 +127,8 @@
                                 <div class="col-md-12">
                                     <input type="text" class="form-control" id="period-mobile"
                                         value="Arrival, Departure" />
-                                    <input type="hidden" id="checkInDateMobile" name="checkInDate" />
-                                    <input type="hidden" id="checkOutDateMobile" name="checkOutDate" />
+                                    <input type="hidden" id="checkInDateMobile" name="check_in_date" />
+                                    <input type="hidden" id="checkOutDateMobile" name="check_out_date" />
                                     <input type="hidden" name="locale" value="en" />
                                     <input type="hidden" name="currency" value="USD" />
                                 </div>
@@ -137,7 +137,7 @@
                         <div class='col-12 mt-5'>
                             <div class="form-group row m-auto">
                                 <div class="col-md-12">
-                                    <select class="form-control" name="items[0][adults]">
+                                    <select class="form-control" name="number_adults">
                                         <option><span>No. of guests</span></option>
                                         <option><span>1</span></option>
                                         <option><span>2</span></option>

@@ -70,15 +70,15 @@ $(function () {
     var rangeArray = rangeDate.split(' - ');
     var dateStart = new Date(rangeArray[0]);
     var dateEnd = new Date(rangeArray[1]);
-    $('#checkInDate').val(dateStart.getTime());
-    $('#checkOutDate').val(dateEnd.getTime());
+    $('#checkInDate').val(rangeArray[0]);
+    $('#checkOutDate').val(rangeArray[1]);
   }, false);
   inputMobile.addEventListener('afterClose', function () {
     var rangeDate = datepickerMobile.getValue();
     var rangeArray = rangeDate.split(' - ');
     var dateStart = new Date(rangeArray[0]);
     var dateEnd = new Date(rangeArray[1]);
-    $('#checkInDateMobile').val(dateStart.getTime());
-    $('#checkOutDateMobile').val(dateEnd.getTime());
+    $('#checkInDateMobile').val(rangeArray[0]);
+    $('#checkOutDateMobile').val(rangeArray[1]);
   }, false);
 })
