@@ -1,4 +1,3 @@
-
 $(function () {
   var input = document.getElementById('period');
   var datepicker = new HotelDatepicker(input, {
